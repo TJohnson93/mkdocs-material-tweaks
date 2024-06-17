@@ -22,6 +22,9 @@ Add the below CSS styling to your `extra.css` file.
 
 ### Headers
 Add a line under headers like GitHub
+
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/144d49a8-c276-4276-a15f-05c1b447a864)
+
 ``` css
 h2,
 h3 {
@@ -36,7 +39,7 @@ h3 {
 #### Page Subtitle
 Add a page subtitle that applies directly under the H1 tag (Page Title)
 
-![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/c1302ed1-d487-4b18-8c7f-fc97b0eb4726)
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/fc8c7300-5097-435b-94d8-72f1b044a8a2)
 
 ``` css
 .md-typeset h1 {
@@ -58,7 +61,8 @@ To use the page subtitle, wrap your content in a `span` tag
 #### Section Subtitle
 Add a subtitle under a specific H2 or H3 heading
 
-![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/ced76d1e-cdd3-4f36-b011-e8a79a3890cb)
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/b0330d97-430a-4135-94f9-ba41beebc7ec)
+
 
 ``` css
 .section-subtitle {
@@ -76,6 +80,9 @@ To use the section subtitle, wrap your content in a `span` tag
 
 ### Figure Captions
 Add a caption under an image: 
+
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/408e5372-1690-4a9f-b23f-ad57b42eb237)
+
 ``` css
 figcaption {
   /* Caption under image formatting */
@@ -93,7 +100,10 @@ You apply this by enclosing your caption in a `<figure >` tag
 ```
 
 ## Tables
-Make the tables 100% of container, round the edges of the table and update the table header color
+Make the tables 100% of container, round the edges of the table and update the table header color.
+
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/da774178-65cd-4a88-809b-d2d618ed90d5)
+
 ``` css
 /* Table 100% Width fix */
 .md-typeset__table {
@@ -170,15 +180,30 @@ th:last-of-type {
 ## Navigation Status
 
 ### New Statuses
+#### Under Review
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/c905a5b0-9310-47f3-98e6-846819d31cff)
+
 ``` css
-.md-status--draft {
-  --md-status: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-1.9l10-10V8l-6-6H6m7 1.5L18.5 9H13V3.5m7.1 9.5c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-2 1.8L12 20.9V23h2.1l6.1-6.1-2.1-2.1Z"/></svg>');
+.md-status--review {
+  --md-status: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.986 23.972C5.411 23.972 0 18.561 0 11.986 0 5.411 5.411 0 11.986 0c6.575 0 11.986 5.411 11.986 11.986a11.9 11.9 0 0 1-2.492 7.281l2.062 2.062c.293.293.458.691.458 1.106 0 .859-.706 1.565-1.565 1.565-.415 0-.813-.165-1.106-.458l-2.062-2.062a11.9 11.9 0 0 1-7.281 2.492Zm6.664-6.001a8.936 8.936 0 0 0 2.31-5.985c0-4.923-4.051-8.974-8.974-8.974-2.702 0-5.141 1.22-6.792 3.135h5.255v2.458H3.681a8.851 8.851 0 0 0-.536 1.844H9.22v2.459H3.06c.087.845.297 1.673.621 2.459h4.31v2.458H5.194c1.651 1.915 4.09 3.135 6.792 3.135 2.29 0 4.392-.877 5.985-2.31a1.59 1.59 0 0 1 .679-.679Zm-9.43-.146h7.376v-2.458H9.22v2.458Zm6.147-4.917h4.917v-2.459h-4.917v2.459Zm-4.918 0h3.074v-2.459h-3.074v2.459Zm1.844-4.303h4.918V6.147h-4.918v2.458Z"/></svg>');
 }
+```
+
+#### Upcoming
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/e563e764-7bd5-4341-b09a-e4d8173a5623)
+
+``` css
 .md-status--upcoming {
   --md-status: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2m-8.1 7c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2-.8 0-1.4.4-1.8.8l-2.7 2.7-4-2.4V7H11v6l4.4 2.7-4.4 4.4v1.8Z"/></svg>');
 }
-.md-status--review {
-  --md-status: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.986 23.972C5.411 23.972 0 18.561 0 11.986 0 5.411 5.411 0 11.986 0c6.575 0 11.986 5.411 11.986 11.986a11.9 11.9 0 0 1-2.492 7.281l2.062 2.062c.293.293.458.691.458 1.106 0 .859-.706 1.565-1.565 1.565-.415 0-.813-.165-1.106-.458l-2.062-2.062a11.9 11.9 0 0 1-7.281 2.492Zm6.664-6.001a8.936 8.936 0 0 0 2.31-5.985c0-4.923-4.051-8.974-8.974-8.974-2.702 0-5.141 1.22-6.792 3.135h5.255v2.458H3.681a8.851 8.851 0 0 0-.536 1.844H9.22v2.459H3.06c.087.845.297 1.673.621 2.459h4.31v2.458H5.194c1.651 1.915 4.09 3.135 6.792 3.135 2.29 0 4.392-.877 5.985-2.31a1.59 1.59 0 0 1 .679-.679Zm-9.43-.146h7.376v-2.458H9.22v2.458Zm6.147-4.917h4.917v-2.459h-4.917v2.459Zm-4.918 0h3.074v-2.459h-3.074v2.459Zm1.844-4.303h4.918V6.147h-4.918v2.458Z"/></svg>');
+```
+
+#### Draft
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/c0b3bb6e-f6eb-4dc0-84ed-5bc1245af031)
+
+``` css
+.md-status--draft {
+  --md-status: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-1.9l10-10V8l-6-6H6m7 1.5L18.5 9H13V3.5m7.1 9.5c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-2 1.8L12 20.9V23h2.1l6.1-6.1-2.1-2.1Z"/></svg>');
 }
 ```
 
