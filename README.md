@@ -1,7 +1,9 @@
-# mkdocs-material-tweaks
-CSS Tweaks made to Material for mkdocs that I re-use in all sites 
+# Material for MKdocs CSS Tweaks
+CSS Tweaks made to Material for mkdocs that I re-use in all sites.
 
+Want to submit your ideas or request another style, please submit an [issue](https://github.com/TJohnson93/mkdocs-material-tweaks/issues).
 
+---
 
 # CSS Tweaks
 
@@ -120,6 +122,7 @@ th:last-of-type {
 
 ## Search Bar Border Radius
 ![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/553589de-b6cf-4937-81a2-480d72a1b4cd)
+![image](https://github.com/TJohnson93/mkdocs-material-tweaks/assets/6167090/58abe39b-720f-4e6d-b6e5-c3d50c094338)
 
 ``` css
 /* Search Forms */
